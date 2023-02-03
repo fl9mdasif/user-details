@@ -8,20 +8,20 @@ const User = ({ data, index }) => {
 
     const navigateUserDetails = (id) => {
         navigate(`/userDetails/${id}`);
-        // navigate('/userDetails')
     }
+
     return (
         <>
-            <tr className='mx-2 my-5 py-2'>
+            <tr className=' bg-red-400 important'>
 
-                <td>{index + 1}</td>
+                <td className='mx-2 my-5 py-2 bg-red-4' >{index + 1}</td>
                 <td>{name}</td>
                 <td>{email}</td>
                 <td>{phone}</td>
                 <td>{data.address.city}</td>
 
                 <td>
-                    <button className='btn bg-green-300 text-black'
+                    <button className='btn btn-md bg-green-400 font-bolt hover:bg-purple-700 border-none text-black'
                         onClick={() => navigateUserDetails(data.id)}>See details</button>
                 </td>
 

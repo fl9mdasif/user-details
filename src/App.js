@@ -1,4 +1,3 @@
-import 'react-toastify/dist/ReactToastify.css';
 import Home from './components/Home/Home';
 import { Route, Routes } from 'react-router-dom';
 import UserDetails from './components/Users/UserDetails';
@@ -17,6 +16,7 @@ function App() {
         <Route path='/users' element={
           <Users />
         } />
+
         <Route path='/userDetails/:userID' element={
           <UserDetails />
         } />
