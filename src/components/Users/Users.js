@@ -74,7 +74,7 @@ const Users = () => {
                         // console.log(num);
                         <button
                             onClick={() => setCurrentPage(num + 1)}
-                            className={currentPage === num ? 'bg-yellow-500 btn border-none ml-3 px-6 text-black' : "btn ml-2 hover:none bg-green-500 text-black border-none font-bold"}
+                            className={currentPage - 1 === num ? 'bg-yellow-500 btn border-none ml-3 px-6 text-black' : "btn ml-2 hover:none bg-green-500 text-black border-none font-bold"}
                             key={num}
 
                         >
